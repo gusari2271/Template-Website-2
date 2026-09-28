@@ -11,6 +11,8 @@ import CartDrawer from './components/CartDrawer';
 import QuickViewModal from './components/QuickViewModal';
 import SearchModal from './components/SearchModal';
 import { Check, ShoppingBag, X } from 'lucide-react';
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 
 export default function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -154,6 +156,9 @@ export default function App() {
           </button>
         </div>
       )}
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
